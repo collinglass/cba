@@ -1,61 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Ember.js + Go == ♥</title>
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Collin Glass">
 
-<script type="text/x-handlebars">
-<div class="container">
-  <ul class="nav nav-tabs">
-    <li>{{#linkTo index}}Index{{/linkTo}}</li>
-    <li>{{#linkTo create}}Create{{/linkTo}}</li>
-  </ul>
-  {{outlet}}
-</div>
-</script>
+    <title>CBA App Login</title>
 
-<script type="text/x-handlebars" data-template-name="index">
-<ul class="thumbnails">
-{{#each controller}}
-  <li class="span3">
-    <div class="thumbnail">
-      <img {{bindAttr src="picture"}}/>
-      <div class="caption">
-        <h3>{{name}}</h3>
-        <button {{action deleteKitten this}}>Delete</button>
-        {{#linkTo edit this}}Edit{{/linkTo}}
-      </div>
-    </div>
-  </li>
-{{/each}}
-</ul>
-</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 
-<script type="text/x-handlebars" data-template-name="_form">
-<form {{action save on="submit"}} class="form-inline">
-  {{input type="text" value=name}}
-  <button type="submit" class="btn btn-primary">Save</button>
-</form>
-</script>
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+  </head>
 
-<script type="text/x-handlebars" data-template-name="create">
-<h1>Create kitten</h1>
-{{partial 'form'}}
-</script>
+  <body>
 
-<script type="text/x-handlebars" data-template-name="edit">
-<h1>Edit kitten</h1>
-{{partial 'form'}}
-</script>
+    <div class="container">
+      <form id="form-login" class="form-login" role="form">
+        <h2 class="form-login-heading">Please Login</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+      </form>
 
-<script src="js/lib/jquery.js"></script>
-<script src="js/lib/handlebars.js"></script>
-<script src="js/lib/ember.js"></script>
-<script src="js/lib/ember-data.js"></script>
-<script src="js/app.js"></script>
-</body>
+    </div> <!-- /container -->
+    <script src="js/index.js"></script>
+  </body>
 </html>
-
