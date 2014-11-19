@@ -11,7 +11,7 @@ func main() {
 
 	http.Handle("/", http.FileServer(http.Dir("./public/")))
 
-	log.Println("Listening on 8080")
+	log.Println("Listening...")
 	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	if err != nil {
 		panic(err)
