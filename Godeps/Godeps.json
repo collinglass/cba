@@ -1,0 +1,5 @@
+{
+	"ImportPath": "github.com/collinglass/cba-app",
+	"GoVersion": "go1.3",
+	"Deps": []
+}
