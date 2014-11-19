@@ -1,1 +1,1 @@
-web: demoapp
+web: cba-app
