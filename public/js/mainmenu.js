@@ -7,6 +7,15 @@ function tobills(e) {
 var bills = document.getElementById("menu-bills");
 bills.addEventListener("click", tobills, false);
 
+// Navigate to bills page
+function toNotifications(e) {
+	e.preventDefault();
+	window.location.assign("/notifications.html");
+}
+
+var bills = document.getElementById("menu-notifications");
+bills.addEventListener("click", toNotifications, false);
+
 // Navigate to security page
 function tosecurity(e) {
 	e.preventDefault();
