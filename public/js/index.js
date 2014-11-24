@@ -5,5 +5,15 @@ function mainmenu(e) {
 }
 
 // add event listener to table
-var el = document.getElementById("form-login");
-el.addEventListener("submit", mainmenu, false);
+var login = document.getElementById("form-login");
+login.addEventListener("submit", mainmenu, false);
+
+// Function to change the content of t2
+function todirections(e) {
+	e.preventDefault();
+	window.location.assign("/directions.html");
+}
+
+// add event listener to table
+var directions = document.getElementById("btn-directions");
+directions.addEventListener("click", todirections, false);
