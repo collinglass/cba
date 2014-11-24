@@ -6,7 +6,8 @@ function mainmenu(e) {
 
 // add event listener to table
 var login = document.getElementById("form-login");
-login.addEventListener("submit", mainmenu, false);
+if (login)
+	login.addEventListener("submit", mainmenu, false);
 
 // Function to change the content of t2
 function todirections(e) {
@@ -16,4 +17,5 @@ function todirections(e) {
 
 // add event listener to table
 var directions = document.getElementById("btn-directions");
-directions.addEventListener("click", todirections, false);
+if (directions)
+	directions.addEventListener("click", todirections, false);
