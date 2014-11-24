@@ -1,5 +1,10 @@
-# Ember.js + Go
+# Mockup for Project Management Class
 
-A basic example of an Ember.js app and Go REST server.
+Mobile App for Canadaian Bank of Agriculture
 
-This is currently a work in progress!
+# Team Members
+
+Marvin Reyes
+Tunch Akkaya
+Elijah Wood
+Collin Glass
