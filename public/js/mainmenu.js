@@ -1,3 +1,30 @@
+// Navigate to transfer page
+function tomap(e) {
+	e.preventDefault();
+	window.location.assign("/map.html");
+}
+
+var map = document.getElementById("menu-map");
+map.addEventListener("click", tomap, false);
+
+// Navigate to cheque page
+function todeposit(e) {
+	e.preventDefault();
+	window.location.assign("/cheque.html");
+}
+
+var cheque = document.getElementById("menu-cheque");
+cheque.addEventListener("click", todeposit, false);
+
+// Navigate to bills page
+function tointerac(e) {
+	e.preventDefault();
+	window.location.assign("/card.html");
+}
+
+var interac = document.getElementById("menu-interac");
+interac.addEventListener("click", tointerac, false);
+
 // Navigate to bills page
 function tobills(e) {
 	e.preventDefault();
@@ -13,8 +40,8 @@ function toNotifications(e) {
 	window.location.assign("/notifications.html");
 }
 
-var bills = document.getElementById("menu-notifications");
-bills.addEventListener("click", toNotifications, false);
+var notifications = document.getElementById("menu-notifications");
+notifications.addEventListener("click", toNotifications, false);
 
 // Navigate to security page
 function tosecurity(e) {
@@ -34,16 +61,16 @@ function totransfer(e) {
 var transfer = document.getElementById("menu-transfer");
 transfer.addEventListener("click", totransfer, false);
 
-// Navigate to history page
+// Navigate to transfer page
 function tohistory(e) {
 	e.preventDefault();
 	window.location.assign("/history.html");
 }
 
-var history = document.getElementById("menu-history");
-history.addEventListener("click", tohistory, false);
+var transhistory = document.getElementById("menu-history");
+transhistory.addEventListener("click", tohistory, false);
 
-// Navigate to balance page
+// Navigate to transfer page
 function tobalance(e) {
 	e.preventDefault();
 	window.location.assign("/balance.html");
@@ -52,7 +79,7 @@ function tobalance(e) {
 var balance = document.getElementById("menu-balance");
 balance.addEventListener("click", tobalance, false);
 
-// Navigate to other accounts page
+// Navigate to transfer page
 function toother(e) {
 	e.preventDefault();
 	window.location.assign("/other.html");
